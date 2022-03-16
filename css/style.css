@@ -1,0 +1,215 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/*******************
+TYPOGRAPHY
+**********************/
+h1 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.white-text  {
+  color: rgba(255, 255,255, .85);
+}
+
+.policy-text {
+  font-size: .75rem;
+  color:rgb(189, 190, 204, .85);
+  margin: 0;
+}
+
+.terms-link {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.terms-link:hover,
+.terms-link:focus {
+  color: hsl(246, 25%, 77%);
+}
+
+
+/*******************
+LAYOUT
+**********************/
+/* main */
+.main {
+  text-align: center;
+  background-color: hsl(0, 100%, 74%) ;
+  background-image: url("../images/bg-intro-mobile.png");
+  min-height: 98vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4em 0 2em;
+}
+
+/* sections */
+.section-intro {
+  margin-bottom: 4em;
+}
+
+.section-form,
+.section-offer {
+  box-shadow: 0 8px 8px -2px hsl(249, 10%, 26%);
+  border-radius: 15px; 
+}
+
+.section-offer {
+  background-color: hsl(248, 32%, 49%);
+  padding: .25em 3em;
+  margin-bottom: 1.5em;
+}
+
+.section-form {
+  background: #fff;
+  padding: 1.5em;
+}
+
+/* form */
+.form-signup {
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-field,
+.btn {
+  width: 100%;
+  padding: 1.5em 3em;
+  margin: .75em 0;
+  border: solid 1.5px #e7e7e7;
+  border-radius: 5px;
+}
+
+.input-field {
+  transition: transform 500ms;
+}
+
+.input-field[placeholder] {
+  font-weight: 600;
+  letter-spacing: .75px;
+  color: #8f8d93;
+}
+
+.input-field:hover{
+  transform: scale(1.05);
+  border-color: hsl(248, 32%, 49%);
+}
+
+.btn-primary {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255,255, .85);
+  background-color: hsl(154, 59%, 51%);
+  border:0;
+  box-shadow: 0 8px 8px -8px hsl(249, 10%, 26%);
+  margin-bottom: 1em;
+  transition: transfrom 500ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: hsl(248, 32%, 49%);
+  transform: scale(1.05);
+}
+
+/* form validation */
+.validation-text,
+.password-content-validation,
+.password-length-validation{
+  color:hsl(0, 100%, 74%);
+  font-size: .6rem;
+  text-align: right;
+  margin: 0;
+}
+
+.validation-first-name,
+.validation-last-name,
+.validation-email,
+.validation-email-type,
+.validation-password,
+.password-content-validation,
+.password-length-validation{
+  display: none;
+}
+
+.icon-error {
+  background: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-left: 4em;
+}
+
+
+/* footer */
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/*******************
+MEDIA QUERIES
+**********************/
+@media (min-width: 650px) {
+  .main {
+    text-align: left;
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-intro,
+  .trial-offer {
+    width: 46%;
+  }
+
+  .section-intro {
+    align-self: center;
+  }
+
+  .section-offer {
+    padding: .5em 2em;
+    text-align: center;
+  }
+
+  .offer-text {
+    font-size: .85rem;
+  }
+
+  .input-field,
+  .btn {
+    padding: .75em 2em;
+  }
+
+
+}
