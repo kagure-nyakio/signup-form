@@ -94,13 +94,10 @@ LAYOUT
   width: 100%;
   padding: 1.5em 3em;
   margin: .75em 0;
-  border: solid 1.5px #e7e7e7;
+  border: solid 1.5px hsl(249, 10%, 26%) ;
   border-radius: 5px;
 }
 
-.input-field {
-  transition: transform 500ms;
-}
 
 .input-field[placeholder] {
   font-weight: 600;
@@ -109,7 +106,6 @@ LAYOUT
 }
 
 .input-field:hover{
-  transform: scale(1.05);
   border-color: hsl(248, 32%, 49%);
 }
 
@@ -128,7 +124,6 @@ LAYOUT
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: hsl(248, 32%, 49%);
-  transform: scale(1.05);
 }
 
 /* form validation */
