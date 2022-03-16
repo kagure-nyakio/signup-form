@@ -46,6 +46,7 @@ formSignup.addEventListener("submit", event => {
   if (password === "") {
     allFilled = false;
     fieldValidationStyling(passwordField, validationPassword);
+    location.reload();
   }
 
   // Update page if all fields are valid and filled
