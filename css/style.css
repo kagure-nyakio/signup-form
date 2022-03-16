@@ -41,7 +41,6 @@ strong {
   color: hsl(246, 25%, 77%);
 }
 
-
 /*******************
 LAYOUT
 **********************/
@@ -133,6 +132,7 @@ LAYOUT
 }
 
 /* form validation */
+
 .validation-text,
 .password-content-validation,
 .password-length-validation{
@@ -159,6 +159,14 @@ LAYOUT
   padding-left: 4em;
 }
 
+.subscription {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(255, 255,255, .75);
+  margin: 0 auto;
+  
+  
+}
 
 /* footer */
 .attribution { 
